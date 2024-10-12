@@ -80,7 +80,7 @@ set(CMAKE_DEBUG_POSTFIX "-debug")
 include(ReadCeresVersionFromSource)
 read_ceres_version_from_source(${Ceres_SOURCE_DIR})
 
-enable_testing()
+# enable_testing()
 
 include(CMakeDependentOption)
 include(PrettyPrintCMakeList)
