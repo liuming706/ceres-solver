@@ -109,7 +109,7 @@ option(EIGENSPARSE "Enable Eigen as a sparse linear algebra library." ON)
 cmake_dependent_option(EIGENMETIS "Enable Eigen METIS support." ON EIGENSPARSE OFF)
 option(EXPORT_BUILD_DIR
   "Export build directory using CMake (enables external use without install)." OFF)
-option(BUILD_TESTING "Enable tests" ON)
+option(BUILD_TESTING "Enable tests" OFF)
 option(BUILD_DOCUMENTATION "Build User's Guide (html)" OFF)
 option(BUILD_EXAMPLES "Build examples" ON)
 option(BUILD_BENCHMARKS "Build Ceres benchmarking suite" ON)
