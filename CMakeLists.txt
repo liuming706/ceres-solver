@@ -261,7 +261,7 @@ if (CMAKE_VERSION VERSION_LESS 3.17)
 else (CMAKE_VERSION VERSION_LESS 3.17)
   set_property(CACHE USE_CUDA PROPERTY STRINGS OFF default static)
 endif (CMAKE_VERSION VERSION_LESS 3.17)
-
+update_cache_variable(USE_CUDA OFF)
 if (USE_CUDA)
   if (CMAKE_VERSION VERSION_LESS 3.17)
     # On older versions of CMake (20.04 default is 3.16) FindCUDAToolkit was
