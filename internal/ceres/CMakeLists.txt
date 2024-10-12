@@ -257,7 +257,7 @@ check_cxx_compiler_flag("-Wno-missing-declarations"
                         CHECK_CXX_FLAG_Wno_missing_declarations)
 
 add_library(ceres $<TARGET_OBJECTS:ceres_internal> ${CERES_LIBRARY_SOURCE})
-
+set(BUILD_SHARED_LIBS ON)
 if(BUILD_SHARED_LIBS)
   # While building shared libraries, we additionally require a static variant to
   # be able to access internal symbols which are not intended for general use.
