@@ -190,6 +190,7 @@ if (NOT absl_VERSION)
 endif()
 
 # Google Test
+set(BUILD_TESTING OFF)
 if (BUILD_TESTING)
   if (EXISTS "${Ceres_SOURCE_DIR}/third_party/googletest/CMakeLists.txt")
     message("-- Using the version of googletest in ceres-solver/third_party/googletest")
